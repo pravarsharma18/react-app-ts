@@ -27,13 +27,13 @@ function App() {
   };
   return (
     <div>
-      <Test />
-      <LikeBtn onClick={handleLikeBtn} />
       {showAlert && (
         <Alert onClose={() => setShowAlert(false)}>
           Hello <span>World</span>
         </Alert>
       )}
+      <Test />
+      <LikeBtn onClick={handleLikeBtn} />
       <ListGroup
         items={items}
         heading="States"
